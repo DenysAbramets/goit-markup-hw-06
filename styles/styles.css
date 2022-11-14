@@ -213,12 +213,17 @@
   display: flex;
   width: 30px;
   height: 30px;
-
+cursor: pointer;
   justify-content: center;
   align-items: center;
   border-radius: 50%;
   border-color: rgba(0, 0, 0, 0.1);
   background-color: var(--white-color);
+  transition: fill 250 cubic-bezier(0.4, 0, 0.2, 1); ;
+}
+.modal-button:hover,
+.modal-button:focus{
+  fill: var(--blue-color);
 }
 .modal-button > svg {
   width: 18px;
@@ -653,3 +658,191 @@ img {
   margin-top: 4px;
   margin-bottom: 20px;
 }
+/* Форма */
+
+.backdrop-form{
+  display: block;
+  position: relative;
+  
+}
+.backdrop-form label{
+display: block;
+    font-weight: 400;
+    font-size: 12px;
+    line-height:calc(14/12);
+    letter-spacing: 0.01em;
+    color: #757575;
+    margin-bottom: 4px;
+  
+    padding-left: 40px;
+    text-align: start;
+   
+}
+.backdrop-form input{
+  display: inline-block;
+  cursor: pointer;
+  margin-right: 40px;
+    margin-left: 40px;
+    width: 448px;
+    height: 40px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    margin-bottom:10px ;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    padding-left:40px;
+}
+textarea {
+  resize: none;
+  width: 448px;
+  height: 138px;
+}
+.checkbox-form{
+  margin-right: 40px;
+    margin-left: 40px;
+    width: 425px;
+      height: 24px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.button-form{
+  width: 200px;
+    height: 50px;
+    background-color: var(--blue-color);
+    border-radius: 2px;
+}
+.button-form{
+  margin-bottom: 40px;
+  background-color: var(--blue-color);
+  color: var(--white-color);
+  width: 200px;
+  height: 50px;
+  padding: 10px 52px;
+  font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    
+  
+    border: none;
+    border-radius: 4px;
+    letter-spacing: 0.06em;
+}
+.button-form:active{
+  color: red;
+}
+.modal h2{
+  padding-bottom: 12px;
+    font-size: 20px;
+    line-height:calc(23/20);
+    letter-spacing: 0.03em;
+  margin: 0;
+    color: var(--primary-text-color);
+ 
+}
+.backdrop-form textarea::placeholder{
+  font-weight: 400;
+    font-size: 12px;
+    line-height: calc(14/12);
+    letter-spacing: 0.01em;
+  
+    color: rgba(117, 117, 117, 0.5);
+}
+.icon-modal{
+  display:inline-block;
+  position: absolute;
+  left:50px;
+  width: 18px;
+  height: 18px;
+  top:29px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  
+}
+
+.backdrop-form:hover input,
+.backdrop-form:focus input{
+  border-color: var(--blue-color);
+  box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
+  outline:var(--blue-color);
+
+ 
+}
+.backdrop-form:hover .icon-modal,
+.backdrop-form:focus .icon-modal,
+.backdrop-form:active .icon-modal{
+  fill: var(--blue-color);
+  
+}
+.checkbox-form a{
+  text-decoration: -1px underline ;
+  margin-left:7px;
+  color: var(--blue-color);
+}
+.checkbox-form{
+  font-weight: 400;
+    font-size: 14px;
+    line-height: calc(24/14);
+    letter-spacing: 0.03em;
+    color: var(--title-text-color);
+}
+.backdrop-form:hover textarea,
+.backdrop-form:focus textarea {
+  border-color: var(--blue-color);
+  box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
+  outline: var(--blue-color);
+
+
+}
+.footer-form{
+  padding-left: 93px;
+  
+}
+.form-mail{
+display: flex
+}
+
+.form-mail input{
+  width: 358px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+      border-radius: 4px;
+      background: var(--secondary-background)
+}
+
+.form-mail:hover input,
+.form-mail:focus input{
+  border-color: var(--blue-color);
+  outline: var(--blue-color);
+}
+.footer-button{
+  display: block;
+  position: relative;
+  background-color: var(--blue-color);
+    color: var(--white-color);
+    width: 200px;
+    height: 50px;
+    border-radius: 4px;
+    border: none;
+    padding-right: 28px;
+      font-size: 16px;
+      line-height: calc(30/16);
+    
+      
+      letter-spacing: 0.06em;
+      margin-left: 12px;
+      
+
+}
+
+.footer-form>h2{
+  margin-bottom: 20px;
+}
+.icon-telegram{
+  position: absolute;
+  top: 14px;
+    right: 25px;
+}
+
+
